@@ -1,3 +1,5 @@
+import HomePage from "~/pages/home/home-page";
+
 export default function Home() {
-  return <p>Start</p>;
+  return <HomePage />;
 }

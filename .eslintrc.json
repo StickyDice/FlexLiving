@@ -5,41 +5,25 @@
   },
   "overrides": [
     {
-      "files": [
-        "src/features/**/*-dto.ts"
-      ],
+      "files": ["src/features/**/*-dto.ts"],
       "rules": {
         "camelcase": "off"
       }
     },
     {
-      "files": [
-        "src/test/**/*.test.ts"
-      ],
+      "files": ["src/test/**/*.test.ts"],
       "rules": {
         "max-classes-per-file": "off"
       }
     },
     {
-      "files": [
-        "src/app/**/*.stories.tsx"
-      ],
+      "files": ["src/app/**/*.stories.tsx"],
       "rules": {
         "react/jsx-props-no-spreading": "off"
-      }      
-    },
-    {
-      "files": [
-        "src/test/**/*.test.ts"
-      ],
-      "rules": {
-        "max-classes-per-file": "off"
       }
     },
     {
-      "files": [
-        "src/app/generic/components/**/*.tsx"
-      ],
+      "files": ["src/app/generic/components/**/*.tsx"],
       "rules": {
         "react/jsx-props-no-spreading": "off"
       }
@@ -51,23 +35,12 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ""],
+        "moduleDirectory": ["node_modules", "src/"]
       },
       "alias": {
-        "map": [
-          [
-            "~",
-            "./src"
-          ]
-        ],
-        "extensions": [
-          ".js",
-          ".ts",
-          ".tsx",
-          ".d.ts",
-          ".test.ts",
-          ".json"
-        ]
+        "map": [["~", "./src"]],
+        "extensions": [".js", ".ts", ".tsx", ".d.ts", ".test.ts", ".json"]
       }
     }
   },
@@ -77,23 +50,17 @@
     "plugin:react/recommended",
     "prettier",
     "plugin:@typescript-eslint/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "next/core-web-vitals"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
+    "object-curly-spacing": ["error", "always"],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -104,12 +71,7 @@
         "tsx": "never"
       }
     ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": true
-      }
-    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "class-methods-use-this": "off",
     "import/no-import-module-exports": "off",
     "react/require-default-props": "off",
@@ -122,15 +84,7 @@
     "no-shadow": "off",
     "no-return-await": "off",
     "no-use-before-define": "off",
-    "no-empty-function": [
-      "error",
-      {
-        "allow": [
-          "constructors"
-        ]
-
-      }
-    ],
+    "no-empty-function": ["error", { "allow": ["constructors"] }],
     "import/order": [
       "error",
       {
@@ -140,14 +94,14 @@
             "group": "external"
           }
         ]
-      } 
+      }
     ],
     "prettier/prettier": [
       "warn",
       {
         "printWidth": 80,
         "tabWidth": 2,
-        "endOfLine":"auto",
+        "endOfLine": "auto",
         "useTabs": false,
         "semi": true,
         "singleQuote": false,
@@ -162,12 +116,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ],
     "react/react-in-jsx-scope": "off",
