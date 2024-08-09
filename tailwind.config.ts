@@ -9,6 +9,14 @@ const config: Config = {
     "./src/shared/**/*.{js.ts,jsx,tsx,mdx}",
     "./src/widgets/**/*.{js.ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      spacing: {
+        "191": "766px",
+        "360": "1440px",
+      },
+    },
+  },
   plugins: [],
 };
 export default config;
