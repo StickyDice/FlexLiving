@@ -1,0 +1,1 @@
+### This folder should be removed as soon as backend for images will be developed

@@ -21,18 +21,10 @@ export default function Header() {
         </AppLink>
 
         <div className="flex gap-10">
-          <AppLink vm={homeLinkVM} className="text-black">
-            Home
-          </AppLink>
-          <AppLink vm={landloardsLinkVM} className="text-black">
-            Landloards
-          </AppLink>
-          <AppLink vm={blogLinkVM} className="text-black">
-            Blog
-          </AppLink>
-          <AppLink vm={contactsLinkVM} className="text-black">
-            Contacts
-          </AppLink>
+          <AppLink vm={homeLinkVM}>Home</AppLink>
+          <AppLink vm={landloardsLinkVM}>Landloards</AppLink>
+          <AppLink vm={blogLinkVM}>Blog</AppLink>
+          <AppLink vm={contactsLinkVM}>Contacts</AppLink>
         </div>
       </nav>
     </header>

@@ -20,6 +20,8 @@ const config: Config = {
         "360": "1440px",
         "flex-0-0-5": "flex: 0 0 50%",
         "5xl": "50px",
+        "15": "60px",
+        "35": "140px",
       },
       borderRadius: {
         "5xl": "50px",
@@ -27,6 +29,12 @@ const config: Config = {
       fontSize: {
         "13.5": "54px",
       },
+      lineHeight: {
+        "13.5": "54px",
+      },
+    },
+    backgroundColor: {
+      "light-green": "#E2F1E8",
     },
   },
   plugins: [],
