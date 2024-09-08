@@ -22,6 +22,8 @@ const config: Config = {
         "5xl": "50px",
         "15": "60px",
         "35": "140px",
+        "23": "92px",
+        "49": "196px",
       },
       borderRadius: {
         "5xl": "50px",
@@ -32,9 +34,10 @@ const config: Config = {
       lineHeight: {
         "13.5": "54px",
       },
-    },
-    backgroundColor: {
-      "light-green": "#E2F1E8",
+      backgroundColor: {
+        "light-green": "#E2F1E8",
+        "forest-green": "#064749",
+      },
     },
   },
   plugins: [],

@@ -38,3 +38,8 @@ body {
     text-wrap: balance;
   }
 }
+
+button {
+  margin: 0;
+  padding: 0;
+}

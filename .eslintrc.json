@@ -17,7 +17,7 @@
       }
     },
     {
-      "files": ["src/app/**/*.stories.tsx"],
+      "files": ["src/**/*.stories.tsx"],
       "rules": {
         "react/jsx-props-no-spreading": "off"
       }
@@ -35,7 +35,7 @@
     },
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx", ""],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".stories.tsx"],
         "moduleDirectory": ["node_modules", "src/"]
       },
       "alias": {
@@ -45,6 +45,8 @@
     }
   },
   "extends": [
+    "next",
+    "eslint-config-next",
     "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
