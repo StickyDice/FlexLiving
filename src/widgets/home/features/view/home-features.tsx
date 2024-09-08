@@ -4,7 +4,7 @@ import SofaIcon from "~/shared/ui/icons/sofa-icon";
 import WifiIcon from "~/shared/ui/icons/wifi-icon";
 import Card from "~/widgets/home/features/view/card/card";
 
-export default function Features() {
+export default function HomeFeatures() {
   return (
     <section>
       <div className="centralize-container flex flex-col items-center justify-center mb-35">

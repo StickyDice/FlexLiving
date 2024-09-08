@@ -1,8 +1,9 @@
-import Features from "~/widgets/home/features/view/features";
+import HomeFeatures from "~/widgets/home/features/view/home-features";
 import Header from "~/widgets/header/view/header";
 import HomeDescription from "~/widgets/home/description/home-description";
 import HomeHero from "~/widgets/home/hero/home-hero";
-import Location from "~/widgets/home/location/view/location";
+import HomeLocation from "~/widgets/home/location/view/home-location";
+import HomeBooking from "~/widgets/home/booking/view/home-booking";
 
 export default function HomePage() {
   return (
@@ -10,8 +11,9 @@ export default function HomePage() {
       <Header />
       <HomeHero />
       <HomeDescription />
-      <Features />
-      <Location />
+      <HomeFeatures />
+      <HomeLocation />
+      <HomeBooking />
     </>
   );
 }

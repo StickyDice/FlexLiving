@@ -1,11 +1,14 @@
 import Image from "next/image";
+import AppButton from "~/shared/ui/app-button/app-button";
+import useViewAllLocationAppButtonVM from "~/widgets/home/location/vm/view-all/use-view-all-location-app-button-vm";
 
-export default function Location() {
+export default function HomeLocation() {
+  const vm = useViewAllLocationAppButtonVM();
   return (
-    <section>
+    <section className="mb-35">
       <div className="centralize-container flex flex-col items-center">
         <h2 className="font-bold text-5xl mb-23">Choose your location</h2>
-        <ul className="flex gap-5">
+        <ul className="flex gap-5 mb-15">
           <li className="max-w-49">
             <h3 className="text-center font-bold text-2xl">Shoreditch</h3>
             <Image
@@ -63,6 +66,9 @@ export default function Location() {
             />
           </li>
         </ul>
+        <AppButton vm={vm} className="font-bold">
+          View all spaces
+        </AppButton>
       </div>
     </section>
   );
